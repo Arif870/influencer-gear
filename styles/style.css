@@ -114,10 +114,70 @@ a {
 }
 .heroSection .content .leftContent h1 {
   font-size: 50px;
+  line-height: 60px;
 }
 .heroSection .content .leftContent p {
   color: #3a3a3a;
   margin: 40px 0px;
+}
+
+/* Clients section  */
+
+.clients .content {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  align-items: center;
+  justify-items: center;
+  border-top: 1px solid rgba(229, 229, 229, 0.534);
+  border-bottom: 1px solid rgba(229, 229, 229, 0.534);
+  padding: 20px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.clients .content img {
+  width: 100px;
+}
+
+/* popular collection  */
+.populrCollection {
+  margin: 100px 0px;
+}
+.populrCollection h1 {
+  text-align: center;
+  margin-bottom: 70px;
+  font-size: 32px;
+}
+.populrCollection .popularContent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+  gap: 40px;
+}
+.populrCollection .popularContent .item {
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 14px rgba(109, 111, 110, 0.556);
+}
+.populrCollection .popularContent .item img {
+  width: 100%;
+}
+.populrCollection .popularContent .item h2 {
+  font-weight: 500;
+  margin: 10px 0px;
+}
+.populrCollection .popularContent .item .rating {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.populrCollection .popularContent .item .icons i {
+  color: rgb(233, 191, 4);
+}
+.populrCollection .popularContent .item p.desc {
+  color: rgb(79, 79, 79);
+  margin-top: 10px;
 }
 
 /* Responsive hero section */
@@ -132,24 +192,47 @@ a {
     align-items: center;
   }
   .heroSection {
-    margin: 50px 0px;
+    margin: 10px 0px;
   }
   .heroSection .content {
-    display: block;
-    background-position: bottom center;
+    flex-direction: column-reverse;
+    background-position: top center;
+    background-size: 300px;
   }
   .heroSection .content .leftContent {
     width: 100%;
+    text-align: center;
   }
   .heroSection .content .leftContent h1 {
-    font-size: 30px;
+    font-size: 35px;
+    line-height: 40px;
+    margin-top: 40px;
   }
   .heroSection .content .leftContent p {
     color: #3a3a3a;
     margin: 20px 0px;
   }
   .heroSection .content .rightImage img {
-    width: 100%;
-    margin-top: 40px;
+    width: 80%;
+    display: block;
+    margin: auto;
+  }
+
+  .clients .content {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .clients .content img {
+    width: 50px;
+    justify-items: center;
+  }
+  .populrCollection {
+    margin-top: 30px;
+  }
+  .populrCollection > h1 {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+  .populrCollection .popularContent {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
