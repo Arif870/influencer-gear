@@ -3,8 +3,76 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Influncer Gear</title>
+    <title>Influencer Gear</title>
     <link rel="stylesheet" href="styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
-  <body></body>
+  <body>
+    <!-- Navbar section -->
+    <section class="menu">
+      <div class="content centerContent">
+        <a href="#">Influencer Products</a>
+
+        <!-- Hamburger icon -->
+        <div class="menu-toggle" id="menu-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <!-- Navigation links -->
+        <div class="pages">
+          <ul id="nav-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Sign Up</a></li>
+            <li><a href="#">Login</a></li>
+            <li><i class="fa-solid fa-magnifying-glass"></i></li>
+            <li><i class="fa-solid fa-cart-plus"></i></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hero Section  -->
+    <section class="heroSection">
+      <div class="content centerContent">
+        <div class="leftContent">
+          <h1>Start your Journey as Influncer</h1>
+          <p>
+            Step into the spotlight with confidence. From cameras to lighting –
+            we've got your influencer essentials covered.
+          </p>
+          <button class="btn">
+            Preebook now
+            <i class="fa-solid fa-arrow-right" style="margin-left: 10px"></i>
+          </button>
+        </div>
+        <div class="rightImage">
+          <img src="/images/main-camera.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const toggle = document.getElementById("menu-toggle");
+      const navList = document.getElementById("nav-list");
+
+      toggle.addEventListener("click", () => {
+        navList.classList.toggle("active");
+      });
+
+      // Optional: Close menu after clicking a link
+      const links = document.querySelectorAll("#nav-list li a");
+      links.forEach(link => {
+        link.addEventListener("click", () => {
+          navList.classList.remove("active");
+        });
+      });
+    </script>
+  </body>
 </html>
