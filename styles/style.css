@@ -119,3 +119,37 @@ a {
   color: #3a3a3a;
   margin: 40px 0px;
 }
+
+/* Responsive hero section */
+
+@media screen and (max-width: 1024px) {
+  .iconRes {
+    width: 100%;
+  }
+  .menu .content .iconRes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .heroSection {
+    margin: 50px 0px;
+  }
+  .heroSection .content {
+    display: block;
+    background-position: bottom center;
+  }
+  .heroSection .content .leftContent {
+    width: 100%;
+  }
+  .heroSection .content .leftContent h1 {
+    font-size: 30px;
+  }
+  .heroSection .content .leftContent p {
+    color: #3a3a3a;
+    margin: 20px 0px;
+  }
+  .heroSection .content .rightImage img {
+    width: 100%;
+    margin-top: 40px;
+  }
+}
