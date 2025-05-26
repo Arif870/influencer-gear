@@ -196,10 +196,32 @@ a {
   align-items: center;
   gap: 150px;
 }
+.featured .featureContent img {
+  width: full-width;
+}
 .featured .featureContent p {
   margin: 20px 0px;
 }
+footer {
+  background-color: rgb(4, 4, 47);
+  color: white;
+}
 
+footer .footerContent {
+  text-align: center;
+  padding: 100px 0px;
+}
+footer .footerContent p {
+  font-size: 12px;
+  margin: 10px 0px;
+}
+footer .footerContent .social {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
 /* Responsive hero section */
 
 @media screen and (max-width: 1024px) {
