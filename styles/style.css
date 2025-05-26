@@ -105,7 +105,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: url("images/CircleDesign.svg");
+  background: url("../images/CircleDesign.svg");
   background-repeat: no-repeat;
   background-position: right center;
 }
